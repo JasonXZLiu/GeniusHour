@@ -1,0 +1,81 @@
+body {
+	background-color: white;
+    background-size: 100% 100%;
+/*    -moz-transition: all .5s;
+    -webkit-transition: all .5s;
+    transition: all .5s;*/
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	line-height: normal;
+}
+.navbar {
+	background-color: #262626;
+	padding-left: -20px;
+	border-bottom: none;
+	opacity: 0.7;
+}
+.header-title {
+	font-family: 'Raleway',sans-serif;
+}
+.page-width {
+	max-width: 1140px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+#container-navbar {
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+#container-description {
+	height: 200px;
+	padding-top: 50px;
+	font-size: 14px;
+}
+.btn {
+	color: white;
+	background-color: #262626;
+	height: 50px;
+	border-radius: 0px;
+}
+.btn-default {
+	border-color: #262626;
+}
+.icon-bar {
+	background-color: #fff;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}
+.bs-header {
+	padding-top: 50px;
+	text-align: left;
+	color: white;
+	background-color: black;
+	height: 250px;
+	background-image: url("https://awesomewallpapers.files.wordpress.com/2015/08/3-4.jpg");
+	border-bottom: #262626;
+}
+.header-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+}
+.smaller_description{
+	font-size: 20px;
+}
+#nowrap {
+	white-space: nowrap;
+}
+/*Don't know what this is used for*/
+/*.site-logo.authors {
+	font-size: 24px;
+	display: block;
+}
+.site-logo {
+	font-weight: 200;
+	line-height: 4.2rem;
+	float: left;
+	display: inline-block;
+	font-size: 4.2rem;
+	padding-left: 7.2rem;
+}*/
