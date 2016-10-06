@@ -144,11 +144,7 @@ body {
 }
 .read-more {
 	text-decoration: underline;
-<<<<<<< HEAD
 	color: #0074D9;
-=======
-	color: #262626;
->>>>>>> origin/master
 }
 .read-more:hover {
 	cursor: pointer;
@@ -185,21 +181,12 @@ body {
 	top: 0;
 	z-index: 100;
 	border-radius: 50%;
-<<<<<<< HEAD
 }
 .photo-grid fig {
 	-webkit-transition: opacity 1s ease;
   	-moz-transition: opacity 1s ease;
     -o-transition: opacity 1s ease;
 }
-=======
-}
-.photo-grid fig {
-	-webkit-transition: opacity 1s ease;
-  	-moz-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease;
-}
->>>>>>> origin/master
 .photo-grid:hover fig {
 	opacity: 0;
 }
@@ -244,42 +231,24 @@ body {
 }
 #jasonbio {
 	margin-top: 10px;
-<<<<<<< HEAD
 	margin-left: 70px;
 	margin-bottom: 30px;
 	padding: 20px;
 	text-align: justify;
 	width: 400px;
 	background-color: #001f3f;
-=======
-	margin-left: 20px;
-	margin-bottom: 30px;
-	padding: 20px;
-	text-align: justify;
-	width: 500px;
-	background-color: #0074D9;
->>>>>>> origin/master
 	opacity: 0.8;
 	color: white;
 	border-radius: 20px;
 }
 #williambio {
 	margin-top: 10px;
-<<<<<<< HEAD
 	margin-left: 50px;
 	margin-bottom: 30px;
 	padding: 20px;
 	text-align: justify;
 	width: 400px;
 	background-color: #001f3f;
-=======
-	margin-left: 20px;
-	margin-bottom: 30px;
-	padding: 20px;
-	text-align: justify;
-	width: 500px;
-	background-color: #0074D9;
->>>>>>> origin/master
 	opacity: 0.8;
 	color: white;
 	border-radius: 20px;
