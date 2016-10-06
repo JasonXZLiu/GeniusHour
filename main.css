@@ -4,7 +4,6 @@ body {
     background-size: 100% 100%;
     transition: all .5s;
 	font-family: "Lato",Helvetica,Arial,sans-serif;
-	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=18677), auto;
 }
 .navbar {
 	background-color: #262626;
@@ -203,7 +202,7 @@ body {
 	opacity: 1;
 	-webkit-transition: opacity 1s ease;
   	-moz-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease; 
     cursor: pointer;
 }
 .photo-grid img {
@@ -261,4 +260,13 @@ body {
 #modal-btn {
 	height: 35px;
 	margin-left: 90%;
+}
+.modal {
+	margin-top: 215px;
+}
+.touch_mode_grab {
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=18677'), auto;
+}
+.touch_mode_grabbing {
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=43383'), auto;
 }
