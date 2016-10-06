@@ -4,6 +4,7 @@ body {
     background-size: 100% 100%;
     transition: all .5s;
 	font-family: "Lato",Helvetica,Arial,sans-serif;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=18677), auto;
 }
 .navbar {
 	background-color: #262626;
@@ -40,6 +41,14 @@ body {
 	font-size: 20px;
 	font-family: 'Raleway',sans-serif;
 }
+.container-body {
+	color: #001f3f;
+	text-align: left;
+	max-width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 20px;
+}
 .btn {
 	color: white;
 	background-color: #262626;
@@ -57,6 +66,7 @@ body {
 	border-radius: 1px;
 }
 .bs-header {
+	margin-bottom: 20px;
 	padding-top: 30px;
 	padding: 20px;
 	text-align: left;
@@ -83,6 +93,7 @@ body {
 		url("https://wallpaperscraft.com/image/star_art_sky_night_people_silhouette_98142_1920x1080.jpg");
 	background-repeat: no-repeat;
 	width: 300px;
+	height: 350px;
 	background-size: 100% 100%;
 	margin: 30px;
 	margin-top: 30px;
@@ -90,9 +101,12 @@ body {
 	color: white;
 	border-radius: 15px;
 	display: flex;
-	align-items: center;
 	text-shadow: 2px 2px black;
 	margin-left: 200px;
+	overflow: auto;
+}
+::-webkit-scrollbar {
+	display: none;
 }
 #project-description {
 	color: #001f3f;
@@ -128,46 +142,123 @@ body {
 .bio-description {
 	font-size: 20px;
 }
-.bio-photo {
-	border-radius: 50%;
-	height: 300px;
-	margin-top: 20px;
-	width: 300px;
-	opacity: 0.8;
-	margin-bottom: 20px;
+.read-more {
+	text-decoration: underline;
+	color: #0074D9;
 }
-.image { 
-   position: relative; 
-   width: 100%; /* for IE 6 */
+.read-more:hover {
+	cursor: pointer;
+}
+.btn#modal-btn {
+	border-radius: 10px;
+}
+
+#jasonfig {
+	margin-left: 130px;
+}
+#williamfig {
+	margin-left: 100px;
+}
+.photo-grid figure {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	border-radius: 50%;
+}
+.photo-grid fig {
+	-webkit-transition: opacity 1s ease;
+  	-moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+}
+.photo-grid:hover fig {
+	opacity: 0;
+}
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: 0px;
+	width: 300px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+.photo-grid:hover figcaption {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+  	-moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+    cursor: pointer;
+}
+.photo-grid img {
+	display: block;
+	-webkit-transition: all 2s linear;
+	-moz-transition: all 2s linear;
+	transition: all 2s linear;
+	max-width: 100%;
+	border-radius: 50%;
+}
+.photo-grid:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+	border-radius: 50%;
+	filter: blur(2px);
 }
 .bio-title { 
    position: absolute; 
-   top: 150px; 
+   top: 130px; 
    left: 0; 
    color: white;
    width: 100%; 
    text-shadow: 2px 2px black;
 }
 #jasonbio {
-	text-align: justify;
-	width: 500px;
 	margin-top: 10px;
-	margin-left: 0px;
-	background-color: #0074D9;
+	margin-left: 70px;
+	margin-bottom: 30px;
+	padding: 20px;
+	text-align: justify;
+	width: 400px;
+	background-color: #001f3f;
 	opacity: 0.8;
 	color: white;
-	padding: 20px;
 	border-radius: 20px;
-	margin-bottom: 20px;
 }
 #williambio {
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	padding: 20px;
 	text-align: justify;
-	width: 500px;
-	margin-top: 20px;
-	margin-left: 0px;
-	background-color: #0074D9;
+	width: 400px;
+	background-color: #001f3f;
 	opacity: 0.8;
 	color: white;
-	padding: 20px;
 	border-radius: 20px;
+}
+.modal-footer {
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+#modal-btn {
+	height: 35px;
+	margin-left: 90%;
 }
