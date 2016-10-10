@@ -4,8 +4,10 @@ body {
 /*    -moz-transition: all .5s;
     -webkit-transition: all .5s;
     transition: all .5s;*/
-	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 18px;
+	font-family: "Raleway",Helvetica,Arial,sans-serif;
 	line-height: normal;
+	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=1675), auto;
 }
 .navbar {
 	background-color: #262626;
@@ -29,7 +31,7 @@ body {
 #container-description {
 	height: 200px;
 	padding-top: 50px;
-	font-size: 14px;
+	font-size: 18px;
 }
 .btn {
 	color: white;

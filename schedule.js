@@ -1,0 +1,1 @@
+$("#mydate").datepicker().datepicker("setDate", new Date());
