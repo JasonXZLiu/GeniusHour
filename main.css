@@ -19,26 +19,9 @@ body {
     margin: auto;
     z-index : 1;
 }
-<<<<<<< HEAD
 .prompter {
 	background-color: black;
 	opacity: 0.6;
-=======
-.bio-title {
-	font-size: 30px;
-}
-.bio-description {
-	font-size: 20px;
-}
-.read-more {
-	text-decoration: underline;
-	color: #0074D9;
-}
-.read-more:hover {
-	cursor: pointer;
-}
-.btn#modal-btn {
->>>>>>> origin/master
 	border-radius: 10px;
 	outline: 0px;
 	overflow: hidden;
@@ -48,62 +31,9 @@ body {
     height: 6.7em;
     width: 26em;
 }
-<<<<<<< HEAD
 .btn {
 	font-size: 18px;
 	background-color: #ffffb3;
-=======
-.photo-grid:hover figcaption {
-	opacity: 1;
-	-webkit-transition: opacity 1s ease;
-  	-moz-transition: opacity 1s ease;
-    -o-transition: opacity 1s ease; 
-    cursor: pointer;
-}
-.photo-grid img {
-	display: block;
-	-webkit-transition: all 2s linear;
-	-moz-transition: all 2s linear;
-	transition: all 2s linear;
-	max-width: 100%;
-	border-radius: 50%;
-}
-.photo-grid:hover img {
-	-webkit-transform: scale(1.4);
-	-moz-transform: scale(1.4);
-	transform: scale(1.4);
-	border-radius: 50%;
-	filter: blur(2px);
-}
-.bio-title { 
-   position: absolute; 
-   top: 130px; 
-   left: 0; 
-   color: white;
-   width: 100%; 
-   text-shadow: 2px 2px black;
-}
-#jasonbio {
-	margin-top: 10px;
-	margin-left: 70px;
-	margin-bottom: 30px;
-	padding: 20px;
-	text-align: justify;
-	width: 400px;
-	background-color: #001f3f;
-	opacity: 0.8;
-	color: white;
-	border-radius: 20px;
-}
-#williambio {
-	margin-top: 10px;
-	margin-left: 50px;
-	margin-bottom: 30px;
-	padding: 20px;
-	text-align: justify;
-	width: 400px;
-	background-color: #001f3f;
->>>>>>> origin/master
 	opacity: 0.8;
 	color: black;
 	padding: 1em;
@@ -116,19 +46,3 @@ body {
     left: 45%;
     margin: auto;
 }
-<<<<<<< HEAD
-=======
-#modal-btn {
-	height: 35px;
-	margin-left: 90%;
-}
-.modal {
-	margin-top: 215px;
-}
-.touch_mode_grab {
-	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=18677'), auto;
-}
-.touch_mode_grabbing {
-cursor: url('http://www.rw-designer.com/cursor-extern.php?id=43383'), auto;
-}
->>>>>>> origin/master
