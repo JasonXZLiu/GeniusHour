@@ -14,6 +14,7 @@
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css"> 
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<<<<<<< HEAD
 		<script type="text/javascript" src="main.js"></script>
 	</title>
 </head>
@@ -21,5 +22,152 @@
 		<div class="wordfade">Hmmm... What's next?</div>
 		<div class="prompter hidden"></div>
     	<button type="button" class="btn btn-default hidden" onclick="window.location='main_page.html'">Let's Go In!</button>
+=======
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+			<div class="container" id="container-navbar">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="col-md-4">
+						<div class="btn-group btn-group-justified" role="group" aria-label="...">
+							<div class="btn-group" role="group">
+						    	<button type="button" class="btn btn-default" onclick="window.location='index.html'">Home</button>
+							</div>
+							<div class="btn-group" role="group">
+						    	<button type="button" class="btn btn-default" onclick="window.location='schedule.html'">Schedule</button>
+						  	</div>
+						  	<div class="btn-group" role="group">
+						    	<button type="button" class="btn btn-default" onclick="window.location='updates.html'">Updates</button>
+						  	</div>
+						  	<div class="btn-group" role="group">
+						    	<button type="button" class="btn btn-default" onclick="window.location='results.html'">Results</button>
+						  	</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="col-md-10"></div>
+						<div class="btn-group" role="group">
+						    <button type="button" class="btn btn-default" onclick="window.location='aboutus.html'">About Us</button>
+						 </div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<!-- <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+		</nav> -->
+		<div class="bs-header" id="content">
+			<div class="container" id="container-description">
+				<div class="col-md-5">
+					<div class="col-md-1"></div>
+					<div class="col-md-11" id="image-padding">
+						<img src="https://lh3.googleusercontent.com/-hSLC7Cmm-UM/AAAAAAAAAAI/AAAAAAAAAAA/gqQK52bABNo/photo.jpg" height="300px">
+					</div>
+				</div>
+				<div class="col-md-7" id="content-description">
+					<p class="header-title">Genius Hour</p>
+					<p class="smaller_desciption">By: Jason Liu + William King</p>
+					<p>Here we'll be displaying our collected research and showing the products of our time and efforts...</p>
+				</div>
+			</div>	
+		</div>
+		<div class="body">
+			<div class="body-description">
+				<!-- <div class="col-md-3" id="project-board">
+					<p>Genius Hour is a project assigned by Mr. Fong at The Woodlands School in Mississauga, ON. The purpose of the Genius Hour is to go into interesting physics ideas like invisibility cloaks, levitations or black holes. Students would find solutions to these problems by analyzing data and collecting research. Genius Hour is a project assigned by Mr. Fong at The Woodlands School in Mississauga, ON. The purpose of the Genius Hour is to go into interesting physics ideas like invisibility cloaks, levitations or black holes. Students would find solutions to these problems by analyzing data and collecting research. Genius Hour is a project assigned by Mr. Fong at The Woodlands School in Mississauga, ON. The purpose of the Genius Hour is to go into interesting physics ideas like invisibility cloaks, levitations or black holes. Students would find solutions to these problems by analyzing data and collecting research. Genius Hour is a project assigned by Mr. Fong at The Woodlands School in Mississauga, ON. The purpose of the Genius Hour is to go into interesting physics ideas like invisibility cloaks, levitations or black holes. Students would find solutions to these problems by analyzing data and collecting research.</p>
+				</div>
+				<div class="col-md-7" id="project-description"> -->
+				<div class="container-body">
+					<p class="header-title">Our Project</p>
+					<p class="p-project"><text class="bold-text">Our Question: </text>Is it possible to make an invisibility cloak?</p>
+					<p class="plan-description">Plan</p>
+					<p class="blog-description">Blog</p>
+					<br>
+					<br>
+				</div>
+				<!-- </div> -->
+			</div>	
+			<div class="bios">
+				<p class="header-title">Behind the Scenes</p>
+				<p class="bio-description">Here are the grade 11 students in Mr.Fong's class working on this project...</p>
+				<p class="bio-description">________________</p>
+				<br>
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<div class="Jason">
+						<div class="col-md-6">
+							<div class="photo-grid">
+			      				<figure class="imgfigure" id="jasonfig" data-toggle="modal" data-target="#jasonModal">
+								    <img src="./images/JasonLiu.jpg" height="300" width="300" alt="">
+								    <fig><p class="bio-title">Jason Liu</p></fig>
+								    <figcaption><p>About Him</p></figcaption>
+			      				</figure>	
+		      				</div>			
+						</div>
+						<div class="col-md-6">
+							<div class="photo-grid">
+			      				<figure class="imgfigure" id="williamfig" data-toggle="modal" data-target="#williamModal">
+								    <img src="./images/WilliamKing.jpg" height="300" width="300" alt="">
+								    <fig><p class="bio-title">William King</p></fig>
+									<figcaption><p>About Him</p></figcaption>
+			      				</figure>	
+		      				</div>
+						</div>
+					</div>
+					<div class="William">
+						<div class="col-md-6">
+							<div id="jasonbio">
+		      					<p class="bio-pararaph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jason Liu is in his third year of high school at The Woodlands Secondary School in Mississauga. He is very enthusiastic about business as he hopes to become an accountant or computer programmer. Not only is Jason interested...&nbsp;&nbsp;&nbsp;<span class="read-more" data-toggle="modal" data-target="#jasonModal">Read more...</span></p>
+		      				</div>	
+		      			</div>
+		      			<div class="col-md-6">
+		      				<div id="williambio">
+		      					<p class="bio-pararaph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;William King is in his third year of high school at The Woodlands Secondary School in Mississauga. He is very enthusiastic about engineering and hope to become a computer programmer or an engineer. In addition to an...&nbsp;&nbsp;&nbsp;<span class="read-more" data-toggle="modal" data-target="#williamModal">Read more...</span></p>
+		      				</div>	
+		      			</div>
+					</div>
+				</div>
+				<div class="col-md-1"></div>
+			</div>
+		</div>
+		<div class="modal fade" id="jasonModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Jason Liu's Biography</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p class="bio-pararaph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jason Liu is in his third year of high school at The Woodlands Secondary School in Mississauga. He is very enthusiastic about business as he hopes to become an accountant or computer programmer. Not only is Jason interested in mathematics, he is also an avid table tennis player and on the Canadian National Team. Jason also enjoys researching and analyzing data from this project. Through this genius hour, Jason hopes to understand more about the physics of invisibility cloaks and to dive deeper into this field of science.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" id="modal-btn">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+		<div class="modal fade" id="williamModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">William King's Biography</h4>
+		      </div>
+		      <div class="modal-body">
+		        <p class="bio-pararaph">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;William King is in his third year of high school at The Woodlands Secondary School in Mississauga. He is very enthusiastic about engineering and hope to become a computer programmer or an engineer. In addition to an interest in software development, William is also a certified lifeguard and swim instrucor. Wiliam is eager to learn more about invisibility and hopes to obtain a greater appreciation of physics through the Genius Hour.</p>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal" id="modal-btn">Close</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+>>>>>>> origin/master
 	</body>
 </html>
