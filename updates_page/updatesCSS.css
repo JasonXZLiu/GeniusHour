@@ -49,3 +49,11 @@ body {
 	height: 2px;
 	border-radius: 1px;
 }
+.table {
+	background-color: #e8ebef;
+	outline: #e8ebef;
+	margin-top: 2em;
+}
+.post_content {
+	margin-left: 1em;
+}

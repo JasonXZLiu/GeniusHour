@@ -8,11 +8,11 @@
 		<link rel="icon" href="http://www.dailyfreepsd.com/wp-content/uploads/2014/03/Light-Bulb-Idea-Lamp-PSD-File-Download.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="headerCSS.css">
-		<link rel="stylesheet" type="text/css" href="updatesCSS.css">
+		<link rel="stylesheet" type="text/css" href="../headerCSS.css">
+		<link rel="stylesheet" type="text/css" href="scheduleCSS.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-		<link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css"> 
+		<script type="text/javascript" src="schedule.js"></script>
 	</head>
 	<body>
 		<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
@@ -27,16 +27,16 @@
 					<div class="col-md-4">
 						<div class="btn-group btn-group-justified" role="group" aria-label="...">
 							<div class="btn-group" role="group">
-						    	<button type="button" class="btn btn-default" onclick="window.location='main_page.html'">Home</button>
+						    	<button type="button" class="btn btn-default" onclick="window.location='../main_page/main_page.html'">Home</button>
 							</div>
 							<div class="btn-group" role="group">
 						    	<button type="button" class="btn btn-default" onclick="window.location='schedule.html'">Schedule</button>
 						  	</div>
 						  	<div class="btn-group" role="group">
-						    	<button type="button" class="btn btn-default" onclick="window.location='updates.html'">Updates</button>
+						    	<button type="button" class="btn btn-default" onclick="window.location='../updates_page/updates.html'">Updates</button>
 						  	</div>
 						  	<div class="btn-group" role="group">
-						    	<button type="button" class="btn btn-default" onclick="window.location='results.html'">Results</button>
+						    	<button type="button" class="btn btn-default" onclick="window.location='../results_page/results.html'">Results</button>
 						  	</div>
 						</div>
 					</div>
@@ -54,16 +54,74 @@
 		<div class="bs-header" id="content">
 			<div class="container" id="container-description">
 				<p>
-					<span class="header-title" id="nowrap">Updates</span>
-					<p>Here we'll be displaying the research collected through weekly updates...</p>
+					<span class="header-title" id="nowrap">Plan</span>
+					<p>Our working schedule for the next few months</p>
 				</p>
 			</div>	
 		</div>
 		<div class="description">
-			<div class="col-md-4" id="left-border">
-				
+			<div class="article-wrapper">
+				<article id="post">
+					<header class="entry-header">
+						<h1 class="entry-title">Schedule + Deadlines</h1>
+					</header>
+					<div class="entry-content">
+					<div id="calendar-wrap">
+			    		<div class="month"> 
+						  <ul>
+						    <li class="prev">&#10094;</li>
+						    <li class="next">&#10095;</li>
+						    <li> October<br>
+						      <span style="font-size:18px">2016</span>
+						    </li>
+						  </ul>
+						</div>
+						<ul class="weekdays">
+						  <li>Mo</li>
+						  <li>Tu</li>
+						  <li>We</li>
+						  <li>Th</li>
+						  <li>Fr</li>
+						  <li>Sa</li>
+						  <li>Su</li>
+						</ul>
+						<ul class="days">
+						  <li>1</li>
+						  <li>2</li>
+						  <li>3</li>
+						  <li>4</li>
+						  <li>5</li>
+						  <li>6</li>
+						  <li>7</li>
+						  <li>8</li>
+						  <li>9</li>
+						  <li>10</li>
+						  <li>11</li>
+						  <li>12</li>
+						  <li>13</li>
+						  <li>14</li>
+						  <li>15</li>
+						  <li>16</li>
+						  <li>17</li>
+						  <li>18</li>
+						  <li>19</li>
+						  <li>20</li>
+						  <li>21</li>
+						  <li>22</li>
+						  <li>23</li>
+						  <li>24</li>
+						  <li>25</li>
+						  <li>26</li>
+						  <li>27</li>
+						  <li>28</li>
+						  <li>29</li>
+						  <li>30</li>
+						  <li>31</li>
+						</ul>
+			    	</div>
+			    	</div>
+				</article>
 			</div>
-			<div class="col-md-8" id="posts"></div>
 		</div>
 	</body>
 </html>

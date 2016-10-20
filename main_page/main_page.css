@@ -25,6 +25,13 @@ body {
 	display: flex;
 	align-items: center;
 }
+.table>tbody>tr>td {
+	border-top: 0px;
+}
+.table>tbody>tr>th {
+	width: 20em;
+	border-top: 0px;
+}
 #content-description {
 	background-color: #0d0d0d;
 	background: rgba(54, 54, 54, .8);

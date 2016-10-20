@@ -1,9 +1,11 @@
 body {
-	background-color: white;
-    background-size: 100% 100%;
 	font-family: "Raleway",Helvetica,Arial,sans-serif;
 	line-height: normal;
 	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=1675), auto;
+	background-image: url("./images/city2.jpg");
+	background-repeat: no-repeat;
+	background-position: left top;
+
 }
 .wordfade {
 	font-size: 30px;
@@ -17,19 +19,6 @@ body {
     top: 8%;
     left: 10%;
     margin: auto;
-    z-index : 1;
-}
-.prompter {
-	background-color: black;
-	opacity: 0.6;
-	border-radius: 10px;
-	outline: 0px;
-	overflow: hidden;
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    height: 6.7em;
-    width: 26em;
 }
 .btn {
 	font-size: 18px;
@@ -45,4 +34,25 @@ body {
     top:80%;
     left: 45%;
     margin: auto;
+    z-index: 1;
+}
+.prompter {
+	background-color: black;
+	opacity: 0.6;
+	border-radius: 10px;
+	outline: 0px;
+	overflow: hidden;
+    position: absolute;
+    padding: none;
+    top: 8%;
+    left: 10%;
+    height: 6.7em;
+    width: 26em;
+}
+.wordfade:hover {
+	background-color: #999999;
+	opacity: 0.8;
+}
+.image_background {
+	z-index: 0;
 }

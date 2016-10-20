@@ -15,6 +15,10 @@ $(document).ready(function () {
 	       return $.trim(text);
 	    });            
 	});
-	$('.prompter').fadeIn(18000).removeClass('hidden');
-    $('.btn.hidden').fadeIn(10000).removeClass('hidden');
+	$('#fadediv').click(function() {
+		$('.image_background.hidden').fadeIn(5000).removeClass('hidden');
+		$('.btn.hidden').fadeIn(8000).removeClass('hidden');
+	});
+	$('.prompter.hidden').fadeIn(18000).removeClass('hidden');
+	
 });
