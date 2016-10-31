@@ -61,15 +61,14 @@ body {
 	padding: 5px;
 	color: white;
 	border-radius: 15px;
-	position: absolute;
-	overflow: auto;
 	left: 100;
+	overflow: auto;
 }
 .dates {
 	list-style: none;
 }
 .posts-wrapper {
-	margin-left: 25em;
+	margin-left: 10em;
 }
 .post_description {
 	padding: 2em;
@@ -84,11 +83,6 @@ body {
 	font-size: 24px;
 	font-weight: bold;
 	margin-bottom: 1em;
-	color: black;
-}
-.post_title:hover {
-	color: black;
-	text-decoration: none;
 }
 .post_body {
 	font-size: 18px;
@@ -97,6 +91,5 @@ body {
 	width: 750px;
 	margin-bottom: 1em;
 }
-.anchor {
-	padding-top: 7em;
-}
+
+

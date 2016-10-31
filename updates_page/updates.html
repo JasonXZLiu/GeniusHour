@@ -12,12 +12,15 @@
 		<link rel="stylesheet" type="text/css" href="updatesCSS.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-		<link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css"> 
+		<link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
 		<script src="../data/app.js"></script> 
 		<script src="../data/data.js"></script> 
+		<script src="../data/results.js"></script> 
+		<script src="updates.js"></script> 
 	</head>
-	<body>
+	<body ng-app="myApp" ng-controller="clubCtrl">
 		<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
 			<div class="container" id="container-navbar">
 				<div class="navbar-header">
@@ -63,27 +66,21 @@
 			</div>	
 		</div>
 		<div class="description">
-			<div class="col-md-4" id="left-border"></div>
+			<div class="col-md-4 fixedBoard" id="display-board"> 
+				<ul class="dates" ng-repeat="x in myData ">
+					<li><a ng-href="#{{x.Post_ID}}">{{x.Post_Date}}</a><li>
+				</ul>
+			</div>
 			<div class="col-md-8">
-				<section class="posts-wrapper" id="posts" style="position: relative; width: 750px">
-					<div ng-app="myApp" ng-controller="postCtrl" class="post_container">
-						<table class="table table-bordered" ng-repeat="module in myData">
-							<tr>
-							    <td>
-							    	<div class="post_content">
-										<h1>{{module.Post_Date}}</h1>
-										<br>
-										<p></p>
-							     	<footer>
-										<p>{{module.Post}}</p>
-										<br>
-										<p class="link hidden">{{module.Post_Des_Link + ': ' + module.Post_Link}}</p>
-									</footer>
-							    	</div>
-							    </td>
-							</tr>
-						</table>
-    				</div>
+				<section class="posts-wrapper" style="position: relative; width: 750px">
+					<div  ng-cloak>
+						<div class="post_container" ng-repeat="x in myData ">
+							<img ng-if="x.Post_Image != undefined" ng-src="{{x.Post_Image}}" class="post_image"> 
+							<div class="post_description">
+								<a class="post_title anchor" name="{{x.Post_ID}}">{{ x.Post_Date}}</a><br/><br/><span class="post_body" ng-bind-html="x.Post"></span><br/>
+							</div>
+						</div>
+					</div>
 				</section>
 			</div>
 		</div>

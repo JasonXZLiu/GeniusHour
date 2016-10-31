@@ -20,5 +20,4 @@ $(document).ready(function () {
 		$('.btn.hidden').fadeIn(8000).removeClass('hidden');
 	});
 	$('.prompter.hidden').fadeIn(18000).removeClass('hidden');
-	
 });

@@ -1,37 +1,38 @@
+// link to parts of the html page
+// <a href="http://example.com/page.html#foo"'+posts[i].Post_Date+'"></a>
+// foo = ID of what you want to link it to
+
 (function() {
-  var app = angular.module('myApp', []);
+  var app = angular.module('myApp',  ['ngSanitize']);
 
-  app.controller('postCtrl', function($scope, $http) {
-              $scope.myData = gem;
+  app.controller('clubCtrl', ['$scope', '$http', function($scope, $http) {
+              $scope.myData = posts;
+              $scope.myResult = results;
           }
-  );
- })();
- 
- // if statment to write if there is something in Post_Des_Link or Post_Link then to remove the hidden class
+  ]);
+})();
 
- // return {
- //      restrict: 'E',
- //      template: '<div></div>',
- //      replace: true,
- //      scope: {
- //        obj: '='
- //      },
- //      link: function(scope, element, attr) {
- //        element.html(hrefLinks(scope.obj));
- //      }
- //    };
+// $(document).ready(function() {
+//   load_posts();
+// });
 
- // place <json-link obj="linkObj"></json-link> into html 
- // http://plnkr.co/edit/Fwca9h4yNZhJ8FGR8BK5?p=preview
+// function load_posts() {
+//   for (i=0; i<posts.length; i++) {
+//     date_id = "dates" + String(i);
+//     $('#display-board').append('<ul class="dates" id="'+date_id+'"></ul>');
+//     $('#'+date_id).append('<li>'+posts[i].Post_Date+'<li>');
+//     }
+// }
 
-  /*
-    var app = angular.module('myApp', []);
-    app.controller('clubCtrl', function($scope, $http) {
-        $http.get("http://google,doc/customer.json").then(function (response) { 
-        $scope.mymathData = response.data;
-        });
-    }); 
-  */
-
-
-
+// function load_posts() {
+//   for (i=0; i<posts.length; i++) {
+//     post_id = "post" + String(i);
+//     $('#posts').append('<div class="post" id="'+post_id+'"></div>');
+//     // $('#posts').append("<img class=\"post_image\" src=\""+image+"\">");
+//     $('#'+post_id).append('<h1>'+posts[i].Post_Date+'</h1>');
+//     $('#'+post_id).append('<p>'+posts[i].Post+'</p>');
+//     // if (image = "" 0) {
+//     //   ('#'+post_id).append('<div class="stretch"></div>');
+//     // }
+//   }
+// }
