@@ -9,6 +9,9 @@ body {
 	line-height: normal;
 	cursor: url(http://www.rw-designer.com/cursor-extern.php?id=1675), auto;
 }
+.bs-header {
+	margin-bottom: 2em;
+}
 .navbar {
 	background-color: #262626;
 	padding-left: -20px;
@@ -48,4 +51,52 @@ body {
 	width: 22px;
 	height: 2px;
 	border-radius: 1px;
+}
+#display-board {
+	width: 300px;
+	height: 350px;
+	opacity: 0.6;
+	background-color: black;
+	background-size: 100% 100%;
+	padding: 5px;
+	color: white;
+	border-radius: 15px;
+	position: absolute;
+	overflow: auto;
+	left: 100;
+}
+.dates {
+	list-style: none;
+}
+.posts-wrapper {
+	margin-left: 25em;
+}
+.post_description {
+	padding: 2em;
+	text-align: justify;
+	background-color: #e8ebef;
+	outline: #e8ebef;
+	margin-bottom: 2em;
+	border-radius: 1em;
+}
+.post_title {
+	font-family: 'Raleway',sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+	margin-bottom: 1em;
+	color: black;
+}
+.post_title:hover {
+	color: black;
+	text-decoration: none;
+}
+.post_body {
+	font-size: 18px;
+}
+.post_image {
+	width: 750px;
+	margin-bottom: 1em;
+}
+.anchor {
+	padding-top: 7em;
 }

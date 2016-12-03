@@ -1,0 +1,298 @@
+body {
+	background-color: white;
+	font-size: 18px;
+    background-size: 100% 100%;
+    transition: all .5s;
+	font-family: "Lato",Helvetica,Arial,sans-serif;
+	color: white;
+}
+.navbar {
+	background-color: #262626;
+	padding-left: -20px;
+	border-bottom: none;
+	opacity: 0.8;
+	position: fixed;
+}
+.header-title {
+	font-family: 'Raleway',sans-serif;
+}
+.page-width {
+	max-width: 1140px;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+#container-navbar {
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+.table {
+	display: flex;
+	align-items: center;
+	background-color: #262626;
+	opacity: 0.8;
+	border-radius: 10px; 
+	padding: 20px;
+}
+.table>tbody>tr>td {
+	border-top: 3px;
+}
+.table>tbody>tr>th {
+	width: 20em;
+	border-top: 3px;
+}
+#content-description {
+	background-color: #ffff66;
+	background: rgba(54, 54, 54, .8);
+	border-radius: 20px;
+	padding: 20px;
+	padding-left: 20px;
+	position: relative;
+	top: 50px;
+}
+#container-description {
+	height: 200px;
+	padding-top: 60px;
+	font-size: 20px;
+	font-family: 'Raleway',sans-serif;
+}
+.container-body {
+	text-align: left;
+	max-width: 100%;
+    padding-right: 300px;
+    padding-left: 300px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    /*background-image: url("https://awesomewallpapers.files.wordpress.com/2015/08/3-4.jpg");*/
+    background-image: url('../images/background_bot.png');
+    background-size: 100% 675px;
+    background-repeat: no-repeat;
+}
+.placeholder {
+	height: 50px;
+}
+.btn {
+	color: white;
+	background-color: #262626;
+	height: 50px;
+	border-radius: 0px;
+}
+.btn-default {
+	border-color: #262626;
+}
+.icon-bar {
+	background-color: #fff;
+	display: block;
+	width: 22px;
+	height: 2px;
+	border-radius: 1px;
+}
+.bs-header {
+	padding-top: 30px;
+	padding: 20px;
+	text-align: left;
+	color: white;
+	background-color: black;
+	height: 460px;
+	/*background-image: url("https://awesomewallpapers.files.wordpress.com/2015/08/3-4.jpg");*/
+	background-image: url('../images/background_top.png');
+	background-size: 100% 100%;
+	border-bottom: #262626;
+}
+.header-title {
+	font-family: 'Raleway', sans-serif;
+	font-size: 50px;
+}
+#image-padding {
+	overflow: hidden;
+    text-align: center;
+}
+/*#project-board {
+	background: 
+		linear-gradient(
+			rgba(100,100,100,0.6),
+			rgba(0,0,0,0.8)
+		),
+		url("https://wallpaperscraft.com/image/star_art_sky_night_people_silhouette_98142_1920x1080.jpg");
+	background-repeat: no-repeat;
+	width: 300px;
+	height: 350px;
+	background-size: 100% 100%;
+	margin: 30px;
+	margin-top: 30px;
+	padding: 30px;
+	color: white;
+	border-radius: 15px;
+	display: flex;
+	text-shadow: 2px 2px black;
+	margin-left: 200px;
+	overflow: auto;
+}
+::-webkit-scrollbar {
+	display: none;
+}
+#project-description {
+	color: #001f3f;
+	height: 400px;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-size: 24px;
+}*/
+.bold-text {
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'Lato',sans-serif;
+}
+.bios {
+	color: #0074D9;
+	text-align: center;
+	display: inline;
+	max-width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.William {
+	display: flex;
+	align-items: center;
+}
+.Jason {
+	display: flex;
+	align-items: center;
+}
+.bio-title {
+	font-size: 30px;
+}
+.bio-description {
+	font-size: 20px;
+}
+.read-more {
+	text-decoration: underline;
+	color: #0074D9;
+}
+.read-more:hover {
+	cursor: pointer;
+}
+.btn#modal-btn {
+	border-radius: 10px;
+}
+#jasonfig {
+	margin-left: 130px;
+}
+#williamfig {
+	margin-left: 100px;
+}
+.photo-grid figure {
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+	width: 300px;
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	-webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+}
+.photo-grid figcaption {
+	background: rgba(0,0,0,0.8);
+	color: white;
+	display: table;
+	height: 100%;
+	left: 0;
+	opacity: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 100;
+	border-radius: 50%;
+}
+.photo-grid fig {
+	-webkit-transition: opacity 1s ease;
+  	-moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease;
+}
+.photo-grid:hover fig {
+	opacity: 0;
+}
+.photo-grid figcaption p {
+	display: table-cell;
+	font-size: 1.5em;
+	position: relative;
+	top: 0px;
+	width: 300px;
+	vertical-align: middle;
+	border-radius: 50%;
+}
+.photo-grid:hover figcaption {
+	opacity: 1;
+	-webkit-transition: opacity 1s ease;
+  	-moz-transition: opacity 1s ease;
+    -o-transition: opacity 1s ease; 
+    cursor: pointer;
+}
+.photo-grid img {
+	display: block;
+	-webkit-transition: all 2s linear;
+	-moz-transition: all 2s linear;
+	transition: all 2s linear;
+	max-width: 100%;
+	border-radius: 50%;
+}
+.photo-grid:hover img {
+	-webkit-transform: scale(1.4);
+	-moz-transform: scale(1.4);
+	transform: scale(1.4);
+	border-radius: 50%;
+	filter: blur(2px);
+}
+.bio-title { 
+   position: absolute; 
+   top: 130px; 
+   left: 0; 
+   color: white;
+   width: 100%; 
+   text-shadow: 2px 2px black;
+}
+#jasonbio {
+	margin-top: 10px;
+	margin-left: 70px;
+	margin-bottom: 30px;
+	padding: 20px;
+	text-align: justify;
+	width: 400px;
+	background-color: #001f3f;
+	opacity: 0.8;
+	color: white;
+	border-radius: 20px;
+}
+#williambio {
+	margin-top: 10px;
+	margin-left: 50px;
+	margin-bottom: 30px;
+	padding: 20px;
+	text-align: justify;
+	width: 400px;
+	background-color: #001f3f;
+	opacity: 0.8;
+	color: white;
+	border-radius: 20px;
+}
+.modal-footer {
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+#modal-btn {
+	height: 35px;
+	margin-left: 90%;
+}
+.modal {
+	margin-top: 215px;
+}
+.touch_mode_grab {
+	cursor: url('http://www.rw-designer.com/cursor-extern.php?id=18677'), auto;
+}
+.touch_mode_grabbing {
+cursor: url('http://www.rw-designer.com/cursor-extern.php?id=43383'), auto;
+}
+.placeholder1 {
+	height: 1000px;
+}

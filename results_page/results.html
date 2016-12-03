@@ -8,13 +8,19 @@
 		<link rel="icon" href="http://www.dailyfreepsd.com/wp-content/uploads/2014/03/Light-Bulb-Idea-Lamp-PSD-File-Download.png">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Lato|Raleway" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="headerCSS.css">
-		<link rel="stylesheet" type="text/css" href="updatesCSS.css">
+		<link rel="stylesheet" type="text/css" href="../headerCSS.css">
+		<link rel="stylesheet" type="text/css" href="results_CSS.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
-		<link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css"> 
+		<link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
+		<link rel="stylesheet" type="text/css" href="../header/headerCSS.css">
+		<script src="../data/app.js"></script> 
+		<script src="../data/data.js"></script> 
+		<script src="../data/results.js"></script> 
 	</head>
-	<body>
+	<body ng-app="myApp" ng-controller="clubCtrl">
 		<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
 			<div class="container" id="container-navbar">
 				<div class="navbar-header">
@@ -27,13 +33,13 @@
 					<div class="col-md-4">
 						<div class="btn-group btn-group-justified" role="group" aria-label="...">
 							<div class="btn-group" role="group">
-						    	<button type="button" class="btn btn-default" onclick="window.location='index.html'">Home</button>
+						    	<button type="button" class="btn btn-default" onclick="window.location='../main_page/main_page.html'">Home</button>
 							</div>
 							<div class="btn-group" role="group">
-						    	<button type="button" class="btn btn-default" onclick="window.location='schedule.html'">Schedule</button>
+						    	<button type="button" class="btn btn-default" onclick="window.location='../schedule_page/schedule.html'">Schedule</button>
 						  	</div>
 						  	<div class="btn-group" role="group">
-						    	<button type="button" class="btn btn-default" onclick="window.location='updates.html'">Updates</button>
+						    	<button type="button" class="btn btn-default" onclick="window.location='../updates_page/updates.html'">Updates</button>
 						  	</div>
 						  	<div class="btn-group" role="group">
 						    	<button type="button" class="btn btn-default" onclick="window.location='results.html'">Results</button>
@@ -54,16 +60,29 @@
 		<div class="bs-header" id="content">
 			<div class="container" id="container-description">
 				<p>
-					<span class="header-title" id="nowrap">Updates</span>
-					<p>Here we'll be displaying the research collected through weekly updates...</p>
+					<span class="header-title" id="nowrap">Results</span>
+					<p>Here will be the products of our time and efforts...</p>
 				</p>
 			</div>	
 		</div>
 		<div class="description">
-			<div class="col-md-4" id="left-border">
-				
+			<div class="col-md-4" id="display-board"> 
+				<ul class="dates" ng-repeat="x in myResult ">
+					<li><a ng-href="#">{{ x.Post_Date}}</a><li>
+				</ul>
 			</div>
-			<div class="col-md-8" id="posts"></div>
+			<div class="col-md-8">
+				<section class="posts-wrapper" style="position: relative; width: 750px">
+					<div  ng-cloak>
+						<div class="post_container" ng-repeat="x in myResult ">
+							<img ng-if="x.Post_Image != undefined" ng-src="{{x.Post_Image}}" class="post_image"> 
+							<div class="post_description">
+								<a class="post_title" name="{{x.Post_ID}}">{{ x.Post_Date}}</a><span class="post_body" ng-bind-html="x.Post"></span><br/>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
 		</div>
 	</body>
 </html>
